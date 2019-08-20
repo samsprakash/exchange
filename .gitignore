@@ -1,0 +1,8 @@
+/node_modules
+/static/*
+!/static/images
+!/static/fonts
+!/static/favicon.ico
+!/static/font-awesome.min.css
+npm-debug.log
+.DS_Store

@@ -1,0 +1,65 @@
+@import '_variables.pcss';
+
+/* Called this because it interferes with RWA. Should be changed back 
+  once bootstrap */
+.dropdown { 
+  display: block;
+  width: 150px;
+  border: solid 1px #EEE;
+  transition: border-color linear 0.15s;
+  outline: none;
+  cursor: pointer;
+  float:left;
+  margin-top:10px;
+  margin-left:10px;
+  margin-bottom:10px;
+  
+  &:focus {
+    border-color: $site-colour;
+
+    .button {
+      background-color: $site-colour-hvr;
+    }
+  }
+
+  &:hover {
+    .button {
+      background-color: $site-colour-hvr;
+    }
+  }
+
+  &[disabled] {
+    color: #777;
+    background-color: #f2f2f2;
+  }
+
+  .button {
+    float: right;
+    padding: calc(0.35em + 1px);
+    width: 2em;
+    text-align: center;
+    background-color: $site-colour;
+    transition: background-color linear 0.15s;
+    color: white;
+  }
+
+  .display {
+    padding: calc(0.35em + 1px);
+  }
+
+  .dropdown-selection {
+    border-top: solid 1px #ddd;
+  }
+
+  .dropdown-content {
+    background-color: white;
+  }
+
+  .dropdown-item + .dropdown-item {
+    border-top: solid 1px #eee;
+  }
+
+  .standard-item {
+    padding: calc(0.35em + 1px);
+  }
+}

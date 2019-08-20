@@ -1,0 +1,45 @@
+@import '../../shared-style/variables.pcss';
+
+.auth-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+
+
+  .flash-banner {
+    margin-bottom: 15px;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px;
+
+    &.error {
+      background-color: #FDD;
+      color: #C77;
+    }
+
+    &.success {
+      color: #777;
+      border: solid 1px $site-colour;
+    }
+  }
+
+  &.page-transition-enter {
+    left: 100%;
+    transition: left ease-out 0.5s;
+
+    &.page-transition-enter-active {
+      left: 0%;
+    }
+  }
+
+  &.page-transition-leave {
+    left: 0%;
+    transition: left ease-out 0.5s;
+
+    &.page-transition-leave-active {
+      left: -100%;
+    }
+  }
+}
